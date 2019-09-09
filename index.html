@@ -15,22 +15,26 @@
 
       <nav class="header-nav" id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="#">Features</a></li>
-          <li class="nav-link"><a href="#">How it Works</a></li>
-          <li class="nav-link"><a href="#">Pricing</a></li>
+          <li class="nav-link"><a href="#features">Features</a></li>
+          <li class="nav-link"><a href="#howitworks">How it Works</a></li>
+          <li class="nav-link"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
 
+<!-- Lead generation -->
     <div class="container">
       <div class="lead-generation">
         <h1>Handcrafted, home-made masterpieces</h1>
-        <input type="text" name="email" id="email" placeholder="Enter your email address" required>
-        <input type="submit" name="submit" class="submit" value="GET STARTED" >
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+          <input type="submit" name="submit" class="submit" value="GET STARTED" >
+        </form>
       </div>
     </div>
 
-      <div class="container">
+<!-- Information section -->
+      <div class="container" id="features">
         <div class="information-section">
           <div class="info">
             <div class="info-icon">
@@ -61,8 +65,67 @@
               <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
             </div>
           </div>
-
         </div>
       </div>
+
+<!-- Page video -->
+      <div class="container" id="howitworks">
+        <div class="page-video">
+          <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen></iframe>
+        </div>
+      </div>
+
+<!-- Product grid -->
+<div class="container" id="pricing">
+  <div class="product-grid">
+    <div class="product-box">
+      <h3>TENOR TROMBONE</h3>
+      <h2>$600</h2>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button type="button" name="select" class="select">SELECT</button>
+    </div>
+
+    <div class="product-box">
+      <h3>BASS TROMBONE</h3>
+      <h2>$900</h2>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button type="button" name="select" class="select">SELECT</button>
+    </div>
+
+    <div class="product-box">
+      <h3>VALVE TROMBONE</h3>
+      <h2>$1200</h2>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button type="button" name="select" class="select">SELECT</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Copyright 2016, Original Trombones</p>
+  </footer>
+</div>
   </body>
 </html>
